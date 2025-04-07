@@ -21,7 +21,7 @@ defmodule Totpex do
                     |> Base.decode16!
 
     # Generate SHA-1
-    :crypto.hmac(:sha, key, moving_factor)
+    :crypto.mac(:hmac, :sha, key, moving_factor)
   end
 
   defp hmac_dynamic_truncation(hmac) do

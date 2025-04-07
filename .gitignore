@@ -21,3 +21,7 @@ erl_crash.dump
 
 # Remove generated binary
 totpex
+
+# IDE Specifics
+.idea
+*iml
